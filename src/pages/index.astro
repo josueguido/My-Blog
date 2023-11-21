@@ -1,0 +1,17 @@
+---
+import LandingBlog from "../components/LandingBlog.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro"
+---
+
+<Layout title="Welcome to My Blog.">
+	<LandingBlog />
+	<main
+		class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+	>
+		
+		<div>
+			<Header />
+		</div>
+	</main>
+</Layout>

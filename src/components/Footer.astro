@@ -1,0 +1,13 @@
+<footer
+    class="py-10 px-10 flex justify-center items-center absolute bottom-0 w-full z-40 text-gray-200 text-xs font-medium"
+    id="landing-footer"
+>
+    <p class=" bg-black">
+        Copyright <span id="current-year">@</span>
+    </p>
+</footer>
+
+<script>
+    const year = document.querySelector(`#current-year`);
+    year.innerHTML = "" + new Date().getFullYear();
+</script>

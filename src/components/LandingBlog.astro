@@ -1,0 +1,96 @@
+---
+
+---
+
+<header
+    class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-gray-800"
+    id="landing-header"
+>
+    <nav class="flex px-5 py-2">
+        <ul class="flex space-x-4 text-sm">
+            <li>
+                <a
+                    href="Blog"
+                    class="text-current font-medium inline-block px-7 py-2 hover:underline"
+                    >Blog</a
+                >
+            </li>
+            <li>
+                <a
+                    href="Guias"
+                    class="text-current font-medium inline-block px-7 py-2 hover:underline"
+                    >Guias</a
+                >
+            </li>
+            <li>
+                <a
+                    href="About"
+                    class="font-medium inline-block px-7 py-2 hover:underline"
+                    >Sobre</a
+                >
+            </li>
+        </ul>
+    </nav>
+</header>
+<div
+    id="menu-backdrop"
+    class={`
+absolute bg-black/5 backdrop-blur-lg rounded
+translate-x-[var(--left)] translate-y-[var(--top)]
+left-0 top-0
+w-[var(--width)] h-[var(--height)]
+transition-all duration-500
+ease-in-out opacity-0 -z-10
+`}
+>
+</div>
+
+<script>
+    
+    const listItem = document.querySelectorAll("#landing-header li");
+    const menuBackDrop = document.querySelector(
+        "#menu-backdrop",
+    ) as HTMLElement;
+
+    listItem.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+            const { left, top, width, height } = item.getBoundingClientRect();
+
+            menuBackDrop.style.setProperty("--left", `${left}px`);
+            menuBackDrop.style.setProperty("--top", `${top}px`);
+            menuBackDrop.style.setProperty("--width", `${width}px`);
+            menuBackDrop.style.setProperty("--height", `${height}px`);
+
+            menuBackDrop.style.opacity = "1";
+            menuBackDrop.style.visibility = "visible";
+        });
+
+        item.addEventListener("mouseleave", () => {
+            menuBackDrop.style.opacity = "0";
+            menuBackDrop.style.visibility = "hidden";
+        });
+    });
+</script>
+
+<script>
+    const headerEl = document.querySelector("#landing-header") as HTMLElement;
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px", // en cuanto se vea el elemento
+        threshold: 0.9, // porcentaje de visibilidad
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const { isIntersecting } = entry;
+            if (isIntersecting) {
+                const color = entry.target.getAttribute("data-header-color");
+                headerEl.style.color = color;
+            }
+        });
+    }, observerOptions);
+
+    const sectionElements = document.querySelectorAll(".landing-section");
+    sectionElements.forEach((section) => observer.observe(section));
+</script>
