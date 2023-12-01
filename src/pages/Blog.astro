@@ -1,0 +1,106 @@
+---
+import Notice from "../components/Notice.astro";
+import NoticeLeft from "../components/NoticeLeft.astro";
+import Footer from "../components/Footer.astro";
+import Info from "../components/Info.astro";
+---
+
+<meta charset="UTF-8" />
+<main
+    class="flex flex-col justify-center items-center bg-white w-screen h-auto"
+>
+    <header
+        class="py-10 w-screen h-[80vh] bg-auto bg-no-repeat bg-center"
+        style="background-image: url('desktop.jpg');"
+    >
+        <section class="flex flex-col items-center justify-normal mb-10">
+            <div class="flex flex-col my-28">
+                <h1
+                    class="flex text-gray-200 font-normal text-xl italic hover:underline"
+                >
+                    Explorando el Universo del Desarrollo Web: Tecnologias,
+                    Experiencias y Consejos.
+                </h1>
+                <div class="mockup-code mockup-phone my-10">
+                    <pre data-prefix="$"><code>npm i web dev</code></pre>
+                    <pre
+                        class="text-warning"
+                        data-prefix=">"><code>installing...</code></pre>
+                    <pre
+                        class="text-success"
+                        data-prefix=">"><code>Done!</code></pre>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="divider divider-info">o</div>
+
+    <article>
+        <NoticeLeft
+            title="Lenguajes de Programación"
+            description="Tutoriales y guías para aprender lenguajes populares como JavaScript, Python, Java, etc y Comparaciones entre diferentes lenguajes y casos de uso."
+            imageSrc="languages programing.png"
+            alt="Logos de lenguajes"
+            Action="Read More"
+            Link=""
+        />
+        <div class="divider divider-accent"></div>
+        <Notice
+            title="Desarrollo Front-end"
+            description="Desarrollo web moderno (HTML5, CSS3, JavaScript), Diseño responsivo y accesibilidad, Frameworks y bibliotecas frontend."
+            imageSrc="Front-End-Developer.webp"
+            alt="Tecnologias para desarrollo Frontend"
+            Action="Read More"
+            Link=""
+        />
+        <div class="divider divider-accent"></div>
+        <NoticeLeft
+            title="Desarrollo Back-end"
+            description="Servidores web (Node.js, Django, Flask, Ruby on Rails), Bases de datos y modelado de datos ,Seguridad backend y autenticación."
+            imageSrc="Backend_Languages.png"
+            alt="Tecnologias para desarrollo Backend"
+            Action="Read More"
+            Link=""
+        />
+        <div class="divider divider-accent"></div>
+        <Notice
+            title="Tecnologías Emergentes"
+            description="Inteligencia artificial y aprendizaje automático, Blockchain y criptomonedas, Internet de las cosas (IoT)."
+            imageSrc="TI.jpg"
+            alt="Tecnologias en auge"
+            Action="Read More"
+            Link=""
+        />
+        <div class="divider divider-accent"></div>
+        <NoticeLeft
+            title="Desarrollo Profesional"
+            description="Consejos para entrevistas y búsqueda de trabajo ,Desarrollo de habilidades blandas ,Gestión de proyectos y liderazgo técnico."
+            imageSrc="desarrollo personal.jpg"
+            alt="Crecimiento Profesional"
+            Action="Read More"
+            Link=""
+        />
+        <div class="divider divider-accent"></div>
+        <Notice
+            title="Recursos Educativos"
+            description="Revisiones de libros, cursos y tutoriales ,Plataformas de aprendizaje en línea ,Recursos gratuitos y de pago."
+            imageSrc="e learning.jpg"
+            alt="Educacion"
+            Action="Read More"
+            Link=""
+        />
+        <div class="divider divider-accent"></div>
+    </article>
+
+    <section>
+        <Info
+            Category="Full-Stack"
+            Date="11/30/203"
+            Title="Mejoras tus habilidades como desarrollador"
+            Paragraph="Para mejorar tus habilidades como desarrollador Front-End, te proporciono enlaces a valiosos recursos en línea. Sitios como Frontend Mentor ofrecen proyectos prácticos que te permiten aplicar tus conocimientos y mejorar tus habilidades. Estos proyectos proporcionan desafíos realistas que abarcan desde principiante hasta avanzado. Explora los siguientes enlaces para encontrar oportunidades de práctica y mejora continua:"
+            Name="Recursos"
+            Link="Recursos"
+        />
+    </section>
+</main>
+<Footer />

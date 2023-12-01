@@ -1,0 +1,37 @@
+---
+
+const { title, description, imageSrc, Action, Link } = Astro.props;
+---
+
+<section class="flex">
+    <div class="flex items-end mx-28 gap-x-6 my-28">
+        <div class="text-right gap-x-10 my-10 items-end justify-end">
+            <h1 class="text-black text-xl font-bold">
+                {title}
+            </h1>
+
+            <p
+                class="text-sm text-gray-700 font-normal my-8 items-end justify-end"
+            >
+                {description}
+            </p>
+            <a href={Link}>
+                <button
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+                >
+                    <span
+                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                    >
+                        {Action}
+                    </span>
+                </button>
+            </a>
+        </div>
+
+        <img
+            class="max-w-screen-sm bg-center h-[60vh]"
+            src={imageSrc}
+            alt="Technology"
+        />
+    </div>
+</section>
