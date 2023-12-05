@@ -1,10 +1,90 @@
 ---
 import Enlaces from "../components/Enlaces.astro";
 import Footer from "../components/Footer.astro";
+import Info from "../components/Info.astro";
+import Listas from "../components/Listas.astro";
 ---
 
 <meta charset="UTF-8" />
 <main>
+    <header></header>
+
+    <section class="flex flex-col bg-white py-10 snap-y snap-mandatory">
+        <div
+            class="container px-5 py-24 mx-auto text-center bg-gradient-to-b from-indigo-700 via-indigo-500 to-indigo-700 text-white rounded-full"
+        >
+            <h1 class="sm:text-4xl text-3xl font-bold mb-8 hover:underline">
+                Artículos Importantes para Desarrolladores
+            </h1>
+            <p class="text-lg mb-12">
+                Mantente al día con los últimos avances en desarrollo de
+                software y tecnología explorando estos artículos esenciales que
+                abordan desde las mejores prácticas de codificación hasta las
+                tendencias emergentes en el mundo de la programación.
+            </p>
+
+            <p class="text-lg mb-12">
+                Comparto estos valiosos recursos, aunque no son de mi autoría,
+                con la aspiración de contribuir al crecimiento y desarrollo de
+                la comunidad de desarrolladores. La intención es proporcionar
+                información valiosa para que todos los lectores puedan mejorar
+                sus habilidades y conocimientos en programación.
+            </p>
+        </div>
+
+        <div class="py-10" style="overflow: hidden;">
+            <svg
+                preserveAspectRatio="none"
+                viewBox="0 0 1200 120"
+                xmlns="http://www.w3.org/2000/svg"
+                style="fill: #00d0e9; width: 100%; height: 45px;"
+            >
+                <path
+                    d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                    opacity=".25"></path>
+                <path
+                    d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                    opacity=".5"></path>
+                <path
+                    d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+                ></path>
+            </svg>
+        </div>
+
+        <div class="">
+            <Listas
+                Article="Clean Code JavaScript"
+                Description="Este artículo explora las mejores prácticas para escribir código limpio en JavaScript. Desde la estructura del código hasta la nomenclatura de variables, aprenderás cómo mejorar la legibilidad y mantenibilidad de tu código JavaScript."
+                Link="https://github.com/andersontr15/clean-code-javascript-es"
+            />
+
+            <Listas
+                Article="Aprendiendo React: 5 Errores que Cometí al Comenzar mi Primer Proyecto Reac"
+                Description="Un articulo sobre React que nos ayudara a escribir mejor codigo y no cometer los mismos errores de los que se habla  y asi sea mucho mas sencillo aprender React."
+                Link="https://css-tricks.com/5-mistakes-starting-react/"
+            />
+
+            <Listas
+                Article="La Guía Definitiva para el Uso Adecuado de la Animación en Experiencia de Usuario"
+                Description="Explora el fascinante mundo de las animaciones en interfaces con esta guía excepcional escrita por Taras Skytskyi para UX Collective. Publicado el 4 de septiembre de 2018, este artículo de 11 minutos de lectura revela los principios y reglas esenciales para una animación efectiva en UX, ofreciendo a los diseñadores una referencia práctica y completa para mejorar sus habilidades en animación de interfaces."
+                Link="https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9"
+            />
+
+            <Listas
+                Article="¿Qué es un patrón de diseño?"
+                Description={`Los patrones de diseño son soluciones probadas y reutilizables para problemas comunes en el desarrollo de software. En este artículo, sumérgete en el fascinante mundo de los patrones de diseño, comprendiendo su importancia, su aplicación efectiva y cómo pueden elevar la calidad y mantenibilidad del código.
+            Aprende sobre los patrones de diseño clásicos como Singleton, Observer, y Factory, y descubre cómo estos conceptos atemporales pueden optimizar la arquitectura de tu software. Exploraremos casos de uso prácticos y discutiremos cómo elegir el patrón adecuado para situaciones específicas, proporcionándote una guía sólida para mejorar tus habilidades como desarrollador. `}
+                Link="https://refactoring.guru/es/design-patterns/what-is-pattern"
+            />
+
+            <Listas
+                Article="Ciclos de vida en React"
+                Description="Sumérgete en la profundidad de React con este diagrama detallado que ilustra los fascinantes ciclos de vida de los componentes. Desde la creación hasta la destrucción, cada fase está meticulosamente representada para proporcionarte una comprensión completa de cómo React gestiona y actualiza tus componentes. Descubre el flujo de eventos que ocurre detrás de cada render y cómo puedes aprovechar al máximo estas fases para optimizar el rendimiento y la funcionalidad de tus aplicaciones React."
+                Link="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
+            />
+        </div>
+    </section>
+
     <section class="text-gray-600 bg-white body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
@@ -93,24 +173,25 @@ import Footer from "../components/Footer.astro";
                             class="flex flex-col leading-relaxed text-base"
                         >
                             <Enlaces
-                                Title="¡Descubre Frontend Mentor!"
-                                Contenido=" Desafíos prácticos diseñados para perfeccionar tus habilidades. Recibe retroalimentación de la activa comunidad para un crecimiento rápido y efectivo."
-                               Link="https://www.frontendmentor.io/"
-                                />
+                                Title="Codewell"
+                                Contenido={`Codewel es una plataforma en línea
+                    diseñada para desarrolladores web que buscan
+                    mejorar sus habilidades mediante la práctica
+                    y la creación de proyectos reales. La
+                    esencia de Codewell es proporcionar desafíos
+                    de codificación prácticos y proyectos de
+                    desarrollo web completos para que los
+                    usuarios los aborden y perfeccionen sus
+                    habilidades.`}
+                                Link="https://www.codewell.cc/"
+                            />
                             <div class="divider divider-accent"></div>
 
                             <Enlaces
-                                Title="Codewell"
-                                Contenido={`Codewel es una plataforma en línea
-                            diseñada para desarrolladores web que buscan
-                            mejorar sus habilidades mediante la práctica
-                            y la creación de proyectos reales. La
-                            esencia de Codewell es proporcionar desafíos
-                            de codificación prácticos y proyectos de
-                            desarrollo web completos para que los
-                            usuarios los aborden y perfeccionen sus
-                            habilidades.`}
-                            Link="https://www.codewell.cc/"
+                                Title="Frontend Mentor"
+                                Contenido={` Desafíos prácticos diseñados para perfeccionar tus habilidades. Recibe retroalimentación de la activa comunidad para un crecimiento rápido y efectivo.
+                            Con toda la informacion necesaria desde el diseño para dispositivos mobiles. Retos  frontend y para el backend, los cuales pueden ser agregados a tu portfolio.`}
+                                Link="https://www.frontendmentor.io/"
                             />
                             <div class="divider divider-accent"></div>
 
@@ -126,12 +207,12 @@ import Footer from "../components/Footer.astro";
                            conocimientos en proyectos reales son
                            fundamentales para el crecimiento y la
                            maestría en el desarrollo frontend.`}
-                           Link="https://www.frontendpractice.com/"
+                                Link="https://www.frontendpractice.com/"
                             />
                             <div class="divider divider-accent"></div>
                             <Enlaces
                                 Title="Dev Challenges"
-                                Contenido={`Dev Challenges es una plataforma dinámica
+                                Contenido={`Es una plataforma dinámica
                            y desafiante diseñada específicamente para
                            desarrolladores que buscan elevar sus
                            habilidades mediante la participación en
@@ -142,7 +223,7 @@ import Footer from "../components/Footer.astro";
                            frontend y backend consoliden sus
                            conocimientos y adquieran experiencia
                            práctica.`}
-                           Link="https://devchallenges.io/"
+                                Link="https://devchallenges.io/"
                             />
                             <div class="divider divider-accent"></div>
                             <Enlaces
@@ -157,7 +238,7 @@ import Footer from "../components/Footer.astro";
                            diarios diseñados para abordar diversos
                            conceptos y aspectos prácticos de
                            JavaScript.`}
-                           Link="https://javascript30.com/"
+                                Link="https://javascript30.com/"
                             />
                             <div class="divider divider-accent"></div>
                             <Enlaces
@@ -171,7 +252,7 @@ import Footer from "../components/Footer.astro";
                            artístico, desafiando a los participantes a
                            crear soluciones visuales utilizando
                            únicamente CSS.`}
-                           Link="https://cssbattle.dev/"
+                                Link="https://cssbattle.dev/"
                             />
                             <div class="divider divider-accent"></div>
                         </article>
@@ -184,18 +265,21 @@ import Footer from "../components/Footer.astro";
                         class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
                     >
                         <svg
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            class="w-10 h-10"
-                            viewBox="0 0 24 24"
+                            fill="#000000"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="800px"
+                            height="800px"
+                            viewBox="0 0 256 165"
+                            xml:space="preserve"
                         >
-                            <circle cx="6" cy="6" r="3"></circle>
-                            <circle cx="6" cy="18" r="3"></circle>
                             <path
-                                d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                                d="M240.4,72.5l-25.9,76.1h-39.3c0-9.8-7.4-17.1-17.7-17.1h-61c0,0-13.9-47.2-21.3-59.2C70.4,64.5,63,59.6,53.3,59.6l0,0
+                   c-15,0-26.3,12.4-34.5,30.3C8.8,111.7,3.1,137.6,2,163h217.5c3.1,0,5.9-2,6.9-5L254,77.1L240.4,72.5z M128,34.6
+                   c0,18-14.6,32.6-32.6,32.6c-18,0-32.6-14.6-32.6-32.6C62.8,16.6,77.4,2,95.4,2c2.1,0,4.1,0.2,6,0.6L94,18.5c-0.3,0-0.7-0.1-1-0.1
+                   c-7.6,0-13.8,6.2-13.8,13.8S85.4,46,93,46s13.8-6.2,13.8-13.8c0-3.7-1.5-7.1-3.9-9.6l7.9-16.8C121,11.4,128,22.2,128,34.6z"
                             ></path>
                         </svg>
                     </div>
@@ -209,58 +293,64 @@ import Footer from "../components/Footer.astro";
                         <p
                             class="text-gray-900 text-sm title-font font-medium mb-3"
                         >
-                            Deseas llevar tus habilidades en JavaScript al
-                            siguiente nivel y explorar sus fascinantes
-                            posibilidades? ¡Estás en el lugar correcto!
-                            Encuentra inspiración, desafíos prácticos y
-                            proyectos emocionantes en los siguientes enlaces.
-                            Estas valiosas fuentes te proporcionarán la
-                            oportunidad de explorar, aprender y mejorar tus
-                            habilidades en JavaScript. ¡Sumérgete en el
-                            fascinante mundo del desarrollo web y descubre cómo
-                            puedes crear experiencias interactivas impactantes
+                            ¿Quieres llevar tus habilidades de programación al
+                            siguiente nivel y explorar las posibilidades de
+                            diversos lenguajes? ¡Has llegado al lugar adecuado!
+                            Descubre inspiración, desafíos prácticos y proyectos
+                            emocionantes en los siguientes enlaces. Estas
+                            fuentes te brindarán la oportunidad de explorar,
+                            aprender y mejorar tus habilidades en programación.
+                            Sumérgete en el fascinante mundo del desarrollo y
+                            descubre cómo puedes crear soluciones innovadoras e
+                            impactantes en varios lenguajes de programación.
                         </p>
                         <div class="divider divider-success"></div>
                         <article
                             class="flex flex-col leading-relaxed text-base"
                         >
-                    <Enlaces
-                    Title="Leet Code"
-                    Contenido=""
-                    Link="https://leetcode.com/"
-                    />
-                    <div class="divider divider-accent"></div>
-                    <Enlaces
-                    Title="Coder Byte"
-                    Contenido=""
-                    Link="https://coderbyte.com/"
-                    />
-                    <div class="divider divider-accent"></div>
-                    <Enlaces
-                    Title="Exercism"
-                    Contenido=""
-                    Link="https://exercism.org/dashboard"
-                    />
-                    <div class="divider divider-accent"></div>
-                    <Enlaces
-                    Title="Code Signal"
-                    Contenido=""
-                    Link="https://codesignal.com/"
-                    />
-                    <div class="divider divider-accent"></div>
-                    <Enlaces
-                    Title="Advent JS"
-                    Contenido=""
-                    Link="https://adventjs.dev/es"
-                    />
-                    <div class="divider divider-accent"></div>
-                    <Enlaces
-                    Title="Hacker Rank"
-                    Contenido=""
-                    Link="https://www.hackerrank.com/"
-                    />
-                    </article>
-                      
+                            <Enlaces
+                                Title="Leet Code"
+                                Contenido={`Es una plataforma en línea que ofrece una amplia variedad de problemas de programación para practicar y mejorar tus habilidades en algoritmos y estructuras de datos.
+                                    Los problemas de LeetCode cubren diversos temas, desde principiantes hasta avanzados, y son utilizados por aspirantes a programadores y profesionales para prepararse para entrevistas técnicas.`}
+                                Link="https://leetcode.com/"
+                            />
+                            <div class="divider divider-accent"></div>
+                            <Enlaces
+                                Title="Coder Byte"
+                                Contenido={`CoderByte es otra plataforma de práctica de programación que proporciona desafíos de codificación en varios niveles de dificultad.
+                                    Se centra en problemas prácticos y entrevistas técnicas, y ofrece una oportunidad para que los programadores mejoren sus habilidades resolviendo desafíos del mundo real.`}
+                                Link="https://coderbyte.com/"
+                            />
+                            <div class="divider divider-accent"></div>
+                            <Enlaces
+                                Title="Exercism"
+                                Contenido={`Exercism es una plataforma que se centra en mejorar las habilidades de programación mediante la resolución de problemas prácticos en varios lenguajes de programación.
+                                    Ofrece un enfoque único al proporcionar retroalimentación de mentores sobre tus soluciones, lo que puede ayudarte a comprender mejor las mejores prácticas y mejorar tus habilidades de codificación.`}
+                                Link="https://exercism.org/dashboard"
+                            />
+                            <div class="divider divider-accent"></div>
+                            <Enlaces
+                                Title="Code Signal"
+                                Contenido={`CodeSignal es una plataforma que proporciona desafíos de programación, así como evaluaciones y entrevistas técnicas.
+                                    Ofrece una variedad de problemas para mejorar las habilidades de codificación y cuenta con características como práctica adaptativa y evaluación de habilidades específicas para ayudar a los programadores a prepararse para oportunidades laborales.`}
+                                Link="https://codesignal.com/"
+                            />
+                            <div class="divider divider-accent"></div>
+                            <Enlaces
+                                Title="Advent JS"
+                                Contenido={`Advent of Code es un evento anual en línea que ofrece un conjunto de problemas diarios durante el mes de diciembre.
+                                    Los problemas están diseñados como un calendario de adviento y a menudo tienen un enfoque temático. Es una oportunidad divertida para programadores de todos los niveles para participar en un desafío diario durante la temporada `}
+                                Link="https://adventjs.dev/es"
+                            />
+                            <div class="divider divider-accent"></div>
+                            <Enlaces
+                                Title="Hacker Rank"
+                                Contenido={`Es una plataforma que abarca una amplia gama de problemas de programación desde algoritmos y estructuras de datos hasta desarrollo web y ciencia de datos.
+                                    Además de los desafíos de codificación, HackerRank también ofrece entrevistas técnicas simuladas, concursos y oportunidades para que los reclutadores evalúen las habilidades de los candidatos.`}
+                                Link="https://www.hackerrank.com/"
+                            />
+                            <div class="divider divider-accent"></div>
+                        </article>
                     </div>
                 </div>
                 <div
@@ -270,44 +360,152 @@ import Footer from "../components/Footer.astro";
                         class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
                     >
                         <svg
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            class="w-10 h-10"
-                            viewBox="0 0 24 24"
+                            height="600px"
+                            width="600px"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 511.883 511.883"
+                            xml:space="preserve"
                         >
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+                            <polygon
+                                style="fill:#CCD1D9;"
+                                points="341.251,479.885 170.618,479.885 191.894,373.316 319.942,373.285 "
+                            ></polygon>
+                            <g>
+                                <path
+                                    style="fill:#E6E9ED;"
+                                    d="M511.883,383.909c0,5.905-4.781,10.653-10.67,10.653H10.654C4.78,394.561,0,389.814,0,383.908
+                            V42.651c0-5.889,4.78-10.653,10.654-10.653h490.559c5.889,0,10.67,4.764,10.67,10.653V383.909z"
+                                ></path>
+                                <path
+                                    style="fill:#E6E9ED;"
+                                    d="M341.251,479.885H170.618c-5.874,0-10.654-4.779-10.654-10.653c0-5.905,4.78-10.686,10.654-10.686
+                            h170.633c5.889,0,10.669,4.78,10.669,10.686C351.92,475.107,347.139,479.885,341.251,479.885z"
+                                ></path>
+                            </g>
+                            <path
+                                style="fill:#656D78;"
+                                d="M501.213,31.998H10.654C4.78,31.998,0,36.762,0,42.651v287.926h511.883V42.651
+                        C511.883,36.762,507.102,31.998,501.213,31.998z"
                             ></path>
-                            <circle cx="12" cy="7" r="4"></circle>
+                            <path
+                                style="fill:#434A54;"
+                                d="M266.595,362.569c0,5.905-4.765,10.685-10.654,10.685c-5.889,0-10.669-4.779-10.669-10.685
+                        c0-5.874,4.78-10.653,10.669-10.653C261.83,351.916,266.595,356.695,266.595,362.569z"
+                            ></path>
+                            <path
+                                style="fill:#FC6E51;"
+                                d="M373.243,74.644H53.317c-5.89,0-10.669,4.78-10.669,10.669c0,5.89,4.78,10.67,10.669,10.67h319.926
+                        c5.889,0,10.67-4.78,10.67-10.67C383.913,79.424,379.131,74.644,373.243,74.644z"
+                            ></path>
+                            <path
+                                style="fill:#AC92EB;"
+                                d="M53.317,138.63h170.632c5.89,0,10.654-4.765,10.654-10.654c0-5.905-4.764-10.669-10.654-10.669
+                        H53.317c-5.89,0-10.669,4.764-10.669,10.669C42.647,133.865,47.427,138.63,53.317,138.63z"
+                            ></path>
+                            <path
+                                style="fill:#48CFAD;"
+                                d="M53.317,181.29h234.618c5.89,0,10.654-4.78,10.654-10.669s-4.765-10.653-10.654-10.653H53.317
+                        c-5.89,0-10.669,4.764-10.669,10.653C42.647,176.51,47.427,181.29,53.317,181.29z"
+                            ></path>
+                            <path
+                                style="fill:#5D9CEC;"
+                                d="M53.317,223.938l149.293,0.016c5.905,0,10.669-4.78,10.669-10.669
+                        c0-5.889-4.764-10.669-10.669-10.669H53.317c-5.89,0-10.669,4.78-10.669,10.669C42.647,219.173,47.427,223.938,53.317,223.938z"
+                            ></path>
+                            <path
+                                style="fill:#FFCE54;"
+                                d="M330.581,245.275H53.317c-5.89,0-10.669,4.78-10.669,10.654c0,5.905,4.78,10.67,10.669,10.67h277.264
+                        c5.905,0,10.67-4.765,10.67-10.654C341.251,250.057,336.486,245.275,330.581,245.275z"
+                            ></path>
+                            <path
+                                style="fill:#ED5564;"
+                                d="M138.625,287.93H53.317c-5.89,0-10.669,4.781-10.669,10.654c0,5.905,4.78,10.686,10.669,10.686
+                        h85.309c5.905,0,10.669-4.78,10.669-10.686C149.295,292.711,144.53,287.93,138.625,287.93z"
+                            ></path>
                         </svg>
                     </div>
                     <div class="flex-grow">
                         <h2
                             class="text-gray-900 text-lg title-font font-medium mb-3"
                         >
-                            Neptune
+                            NodeJS - Django - PostgreSQL
                         </h2>
-                        <p class="leading-relaxed text-base">
-                            Blue bottle crucifix vinyl post-ironic four dollar
-                            toast vegan taxidermy. Gastropub indxgo juice
-                            poutine, ramps microdosing banh mi pug VHS try-hard.
+                        <div class="divider divider-success"></div>
+
+                        <p
+                            class="text-gray-900 text-sm title-font font-medium mb-3"
+                        >
+                            Descubre nuevas oportunidades para expandir tus
+                            habilidades en el desarrollo backend a través de
+                            fuentes de práctica valiosas. Ya sea mejorando tus
+                            conocimientos en bases de datos con PostgreSQL,
+                            construyendo aplicaciones web con Node.js y Express,
+                            o sumergiéndote en el potente framework Django de
+                            Python, estos enlaces ofrecen desafíos y proyectos
+                            emocionantes. Sumérgete en el mundo del desarrollo
+                            del lado del servidor, lleva tus habilidades al
+                            siguiente nivel y construye experiencias
+                            impactantes.
                         </p>
-                        <a class="mt-3 text-indigo-500 inline-flex items-center"
-                            >Learn More
-                            <svg
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                class="w-4 h-4 ml-2"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
+                        <div class="divider divider-success"></div>
+
+                        <article
+                            class="flex flex-col leading-relaxed text-base"
+                        >
+                            <Enlaces
+                                Title="SQL Bolt"
+                                Contenido={`Plataforma de aprendizaje interactiva diseñada para mejorar sus habilidades en SQL. 
+                                Con lecciones prácticas y ejercicios interactivos, te guía a través de los fundamentos y conceptos avanzados de SQL de una manera accesible y amigable.
+                                Si empezando desde cero o busques consolidar tu conocimiento, es una herramienta efectiva para entender bases de datos.`}
+                                Link="https://sqlbolt.com/"
+                            />
+
+                            <div class="divider divider-accent"></div>
+
+                            <Enlaces
+                                Title="NodeSchool"
+                                Contenido={`Comunidad educativa dedicada a proporcionar talleres y ejercicios interactivos que hacen que aprender Node.js y tecnologías asociadas sea una experiencia práctica.
+                                 Ofrecen una inmersión profunda en el ecosistema de Node.js, guiandolos a través de desafíos interactivos que refuerzan los conceptos clave.`}
+                                Link="https://nodeschool.io/es/"
+                            />
+
+                            <div class="divider divider-accent"></div>
+
+                            <Enlaces
+                                Title="Real Python"
+                                Contenido={`Valiosa fuente de aprendizaje que va más allá de los conceptos básicos, ofreciendo tutoriales y proyectos prácticos diseñados para mejorar mundo del desarrollo web con Django y Python. Desde la creación de aplicaciones web hasta la implementación de proyectos prácticos, proporciona un enfoque práctico y orientado a proyectos que te permite consolidar tus habilidades y comprender a fondo el desarrollo web `}
+                                Link="https://realpython.com/"
+                            />
+
+                            <div class="divider divider-accent"></div>
+
+                            <Enlaces
+                                Title="Mozilla Developer Network"
+                                Contenido={`MDN es una plataforma educativa integral que va más allá de los límites, ofreciendo cursos interactivos y desafíos de codificación en diversos lenguajes como Python, Java, SQL, y más. Esta fuente de conocimiento, respaldada por Mozilla, no solo proporciona información esencial sino que también sumerge a los estudiantes en experiencias prácticas que fortalecen sus habilidades de programación.`}
+                                Link="https://www.sololearn.com/"
+                            />
+
+                            <div class="divider divider-accent"></div>
+
+                            <Enlaces
+                                Title="GeeksforGeeks"
+                                Contenido={`GeeksforGeeks emerge como un tesoro educativo al ofrecer una amplia gama de recursos, que abarcan desde tutoriales hasta desafíos de codificación y ejemplos de código. Destacándose como una referencia invaluable, esta plataforma se especializa en el desarrollo backend, poniendo un fuerte énfasis en estructuras de datos y algoritmos.`}
+                                Link="https://www.geeksforgeeks.org/"
+                            />
+
+                            <div class="divider divider-accent"></div>
+
+                            <Enlaces
+                                Title="Codewars"
+                                Contenido={`Codewars destaca como una plataforma dinámica que propone desafíos de codificación (kata) en diversos lenguajes de programación. Aquí, la práctica no es solo una opción, sino una experiencia central, ya que puedes seleccionar katas específicos para el desarrollo backend. A través de la resolución de problemas estimulantes.`}
+                                Link="https://www.codewars.com/dashboard"
+                            />
+
+                            <div class="divider divider-accent"></div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -318,13 +516,48 @@ import Footer from "../components/Footer.astro";
             >
         </div>
     </section>
-    <Footer />
 
-    <script>
-        document
-            .getElementById("blogButton")
-            .addEventListener("click", function () {
-                window.location.href = "Blog";
-            });
-    </script>
+    <section class="text-gray-600 bg-white">
+        <div class="container px-5 py-24 mx-auto">
+            <div
+                class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+            >
+                <h1
+                    class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+                >
+                    Tesoros para Desarrolladores: Recursos Imprescindibles para
+                    Potenciar tu Productividad y Embellecer tus Proyectos Web
+                </h1>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                    En los siguientes enlaces encontraras recursos para ayudarte
+                    a ser mas productivo y ahorrarte tiempo, encontrarás desde
+                    paginas con iconos, componentes, librerias JavaScript para
+                    hacer mas llamativa tu pagina y mucho mas.
+                </p>
+            </div>
+            
+            <Info Title="" Description="" Enlace="" />
+
+            <Info Title="" Description="" Enlace="" />
+
+            <Info Title="" Description="" Enlace="" />
+
+            <Info Title="" Description="" Enlace="" />
+
+
+        </div>
+        <button
+            class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >Button</button
+        >
+    </section>
 </main>
+<Footer />
+
+<script>
+    document
+        .getElementById("blogButton")
+        .addEventListener("click", function () {
+            window.location.href = "Blog";
+        });
+</script>

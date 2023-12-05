@@ -1,5 +1,5 @@
 ---
-
+import Cards from "./Cards.astro";
 ---
 
 <main class="flex flex-col items-center py- px-8 md:px-32 bg-white">
@@ -36,78 +36,42 @@
             </p>
         </div>
     </article>
-    <div class="divider divider-info">o</div>
-    <section class="my-10 ">
-        <h2 class="text-3xl  mb-8 text-center font-extrabold bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text">
-            Descubre Nuestros Artículos Destacados
-        </h2>
-        <div class="flex justify-around items-center gap-x-10">
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img
-                        src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                        alt="Shoes"
-                        class="rounded-xl"
-                    />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">pnpm vs npm</h2>
-                    <p>Cual es la mejor opcion?</p>
-                    <div class="card-actions">
-                        <a href="/Blog">
-                            <button class="btn btn-accent btn-outline"
-                                >Leer Mas</button
-                            >
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img
-                        src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                        alt="Shoes"
-                        class="rounded-xl"
-                    />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Trabajo y Salud</h2>
-                    <p>Como mantener un equilibrio entre la salud y el trabajo?</p>
-                    <div class="card-actions">
-                        <a href="/Blog">
-                            <button class="btn btn-accent btn-outline"
-                                >Leer Mas</button
-                            >
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                        <img
-                            src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes"
-                            class="rounded-xl"
-                        />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Seguridad Informática</h2>
-                        <p>Consejos y prácticas de seguridad en el desarrollo.</p>
-                        <div class="card-actions">
-                            <a href="/Blog">
-                                <button class="btn btn-accent btn-outline"
-                                    >Leer Mas</button
-                                >
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="divider divider-info"></div>
+
+    <section class="flex my-10 grid-flow-col gap-10 items-center text-start">
+        <Cards
+            Title="Desarrollo Front-End"
+            Info={`
+            En el vertiginoso mundo del desarrollo web, la experiencia del usuario se encuentra en la vanguardia de la innovación tecnológica.
+             Desde la creación de interfaces de usuario elegantes hasta la optimización de la velocidad de carga, el Desarrollo Frontend desempeña un papel crucial. 
+             Este artículo ofrece una guía completa para aquellos que buscan convertirse en desarrolladorres frontend, abordando desde los conceptos fundamentales.`}
+            Guia=""
+        />
+
+        <Cards
+            Title="Desarrollo Back-End"
+            Info={`
+            En el tejido mismo de la web, el Desarrollo Backend actúa como el motor silencioso que impulsa la funcionalidad y la lógica detrás de las aplicaciones. 
+            Este artículo te guiará a través de los fundamentos esenciales del desarrollo del lado del servidor, desde la manipulación de datos hasta la creación de APIs sólidas, 
+            ofreciendo una perspectiva completa para aquellos que buscan adentrarse en el fascinante mundo del desarrollo backend.`}
+            Guia=""
+        />
+
+        <Cards
+            Title=" Guía Completa para Clean Code"
+            Info={`En el laberinto del desarrollo de software, la legibilidad y la mantenibilidad son imperativos. La creación de código limpio, conocido como "Clean Code", no solo es una estética aspiración, sino un pilar fundamental para el éxito de proyectos a largo plazo. Esta guía exhaustiva te sumergirá en los principios y prácticas esenciales de Clean Code, proporcionando herramientas valiosas para convertir tus líneas de código en una obra maestra de claridad y eficiencia.`}
+            Guia=""
+        />
         
     </section>
-
-    <section>
-        
-    </section>
+    <button id="click" class="flex my-5 gap-5 items-center hover:underline">
+        <span class=" text-blue-700">Explorar Guías</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l14 0" />
+            <path d="M13 18l6 -6" />
+            <path d="M13 6l6 6" />
+        </svg>
+    </button>
 </main>
