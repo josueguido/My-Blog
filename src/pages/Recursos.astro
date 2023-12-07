@@ -7,9 +7,11 @@ import Listas from "../components/Listas.astro";
 
 <meta charset="UTF-8" />
 <main>
-    <header></header>
+    <header>
+        
+    </header>
 
-    <section class="flex flex-col bg-white py-10 snap-y snap-mandatory">
+    <section class="flex flex-col bg-white py-10">
         <div
             class="container px-5 py-24 mx-auto text-center bg-gradient-to-b from-indigo-700 via-indigo-500 to-indigo-700 text-white rounded-full"
         >
@@ -509,11 +511,7 @@ import Listas from "../components/Listas.astro";
                     </div>
                 </div>
             </div>
-            <button
-                id="blogButton"
-                class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                >Volver a la pagina de inicio</button
-            >
+          
         </div>
     </section>
 
@@ -535,22 +533,125 @@ import Listas from "../components/Listas.astro";
                     hacer mas llamativa tu pagina y mucho mas.
                 </p>
             </div>
-            
-            <Info Title="" Description="" Enlace="" />
+            <div class="grid grid-cols-3 gap-4 justify-center">
+                <Info
+                    Title="Font Awesome"
+                    Description="Font Awesome es una biblioteca de iconos vectoriales y herramienta de diseño que permite agregar íconos fácilmente a tus proyectos web."
+                    Enlace="https://fontawesome.com/icons"
+                />
 
-            <Info Title="" Description="" Enlace="" />
+                <Info
+                    Title=" Yesicon"
+                    Description={`204,670 Iconos Vectoriales de Alta Calidad
+                De Equipo de Diseño de Clase Mundial
+                160 Conjuntos de Iconos de Código Abierto y Gratis
+                Una Herramienta Útil para que Desarrolladores y Diseñadores hagan CV`}
+                    Enlace="https://yesicon.app/?lang=es"
+                />
 
-            <Info Title="" Description="" Enlace="" />
+                <Info
+                    Title="SVG Repo"
+                    Description="SVG Repo es una plataforma que proporciona una amplia variedad de archivos SVG gratuitos para descargar y utilizar en proyectos de diseño y desarrollo."
+                    Enlace="https://www.svgrepo.com/vectors/redes-sociales/"
+                />
+                <Info
+                    Title="Tabler Icons"
+                    Description="Tabler Icons es parte de la suite Tabler, que ofrece una colección de íconos de interfaz de usuario limpios y modernos."
+                    Enlace="https://tabler-icons.io/"
+                />
 
-            <Info Title="" Description="" Enlace="" />
+                <Info
+                    Title="Ionicons"
+                    Description=" Ionicons es una biblioteca de iconos diseñada específicamente para aplicaciones móviles y sitios web responsivos."
+                    Enlace="https://ionic.io/ionicons/"
+                />
 
+                <Info
+                    Title="TOOLS Design"
+                    Description="Plataforma con recursos IU-UX que te pueden ayudar como inspiracion para tus proyectos"
+                    Enlace="https://www.toools.design/"
+                />
 
+                <Info
+                    Title="CODROPS"
+                    Description="Plataforma con cientos de recursos que te serviran para hacer tu pagina muchos mas llamativa."
+                    Enlace="https://tympanus.net/codrops/"
+                />
+
+                <Info
+                    Title="Floating UI"
+                    Description="Una biblioteca de JavaScript para posicionar elementos flotantes y crear interacciones para ellos."
+                    Enlace="https://floating-ui.com/"
+                />
+
+                <Info
+                    Title="Atropos JS"
+                    Description="Atropos es una biblioteca de JavaScript liviana, gratuita y de código abierto para crear impresionantes efectos de desplazamiento de paralaje 3D táctiles."
+                    Enlace="https://atroposjs.com/"
+                />
+
+                <Info
+                    Title="UI Ball"
+                    Description="Animaciones de carga gratuitas y de código abierto para su próximo proyecto."
+                    Enlace="https://uiball.com/ldrs/"
+                />
+
+                <Info
+                    Title="Toastify JS"
+                    Description="JavaScript toast library notification"
+                    Enlace="https://apvarun.github.io/toastify-js/"
+                />
+
+                <Info
+                    Title="UI Colors"
+                    Description="Tailwind CSS Color Generator"
+                    Enlace="https://uicolors.app/create"
+                />
+
+                <Info
+                    Title="Swiper JS"
+                    Description="Swiper es el control deslizante táctil móvil gratuito y de código abierto más moderno con transiciones aceleradas por hardware y un comportamiento nativo sorprendente. Úselo en sitios web, aplicaciones web y aplicaciones móviles nativas/híbridas."
+                    Enlace="https://swiperjs.com/"
+                />
+
+                <Info
+                    Title="Medium Zoom"
+                    Description="Una biblioteca de JavaScript para hacer zoom en imágenes como Medium"
+                    Enlace="https://medium-zoom.francoischalifour.com/"
+                />
+
+                <Info
+                    Title="Flowbite"
+                    Description="Comience a desarrollar con una biblioteca de código abierto de más de 600 componentes, secciones y páginas de UI creadas con las clases de utilidad de Tailwind CSS y diseñadas en Figma."
+                    Enlace="https://flowbite.com/"
+                />
+
+                <Info
+                    Title="Tailblocks"
+                    Description="Componentes de tailwind, responsive y listos para su uso"
+                    Enlace="https://tailblocks.cc/"
+                />
+
+                <Info
+                    Title="Godly"
+                    Description="Cientos de paginas que te pueden servir como inspiracion"
+                    Enlace="https://godly.website/"
+                />
+
+                <Info
+                Title="Omatsuri"
+                Description="12 Herramientas para Programadores Web, Generador de gradientes y paletas, Optimización de SVG"
+                Enlace="https://omatsuri.app/"
+                />
+            </div>
         </div>
         <button
-            class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-            >Button</button
-        >
+        id="blogButton"
+        class="flex mx-auto border-0  text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center justify-center"
+        >Volver a la pagina de inicio</button
+    >
     </section>
+     
 </main>
 <Footer />
 
