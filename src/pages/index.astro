@@ -3,6 +3,8 @@ import LandingBlog from "../components/LandingBlog.astro";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Actualizaciones from "./Lenguajes.astro";
+
 ---
 
 <Layout title="Welcome to My Blog.">
@@ -11,9 +13,14 @@ import Footer from "../components/Footer.astro";
 		class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
 	>
 		
-		<div>
+		<div class="snap-center">
 			<Header />
 		</div>
+
+        <div class="snap-center">
+            <Actualizaciones
+            />
+        </div>
         <Footer/>
 	</main>
     

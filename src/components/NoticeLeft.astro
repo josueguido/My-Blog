@@ -1,22 +1,22 @@
 ---
-const { title, description, imageSrc, Action, Link } = Astro.props;
+const { Title, Description, ImageSrc, Action, Link } = Astro.props;
 ---
 
 <section class="flex my-28">
     <div class="flex items-start justify-center mx-28 gap-x-6">
         <img
             class="max-w-screen-sm bg-center h-[60vh]"
-            src={imageSrc}
+            src={ImageSrc}
             alt="Technology"
         />
 
         <div class="text-start gap-10 my-10">
             <h1 class="text-black text-xl font-bold">
-                {title}
+                {Title}
             </h1>
 
             <p class="text-sm text-gray-500 font-extralight my-16">
-                {description}
+                {Description}
             </p>
             <a href={Link}>
                 <button

@@ -1,5 +1,5 @@
 ---
-
+import NoticeLeft from "../components/NoticeLeft.astro";
 ---
 
 <meta charset="UTF-8" />
@@ -290,15 +290,285 @@
         </div>
     </section>
 
-    <section class="flex flex-col my-10 gap-y-10 text-center">
-        <h1
-            class="text-cyan-500 text-2xl font-mono font-bold hover:underline hover:uppercase"
-        >
-            Donde practicar estos lenguajes?
-        </h1>
-        <p class=" font-light text-sm font-sans text-amber-500">
-            En el siguiente enlace encontrarás recursos donde practicar estos lenguajes de programacion junto con algunos otros recursos que también pueden ser de gran ayuda.
-        <a class="text-gray-400 bg-cyan-600 pb-2 px-2 w-24 h-10 mt-5 rounded-lg" href="Recursos">Recursos</a>
-        </p>
+    <section class="flex flex-col items-center my-10 gap-y-10 text-center">
+        <article>
+            <header>
+                <h1
+                    class="text-cyan-600 text-3xl font-mono font-bold hover:underline hover:uppercase"
+                >
+                    ¿Dónde practicar estos lenguajes?
+                </h1>
+            </header>
+            <p class="font-light text-base font-sans text-amber-600 mt-10">
+                En el siguiente enlace encontrarás recursos para practicar estos
+                lenguajes de programación, junto con otros recursos útiles.
+
+                <button
+                    class="flex mx-80 mt-10 items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+                >
+                    <a
+                        href="Recursos"
+                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                    >
+                        Recursos
+                    </a>
+                </button>
+            </p>
+        </article>
     </section>
+
+    <div style="overflow: hidden;">
+        <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 120"
+            xmlns="http://www.w3.org/2000/svg"
+            style="fill: #00e8d1; width: 100%; height: 45px; transform: rotate(180deg);"
+        >
+            <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25"></path>
+            <path
+                d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                opacity=".5"></path>
+            <path
+                d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+            ></path>
+        </svg>
+    </div>
+
+    <section class="flex flex-col text-black items-center my-10 gap-y-10">
+        <h1 class="font-medium text-xl font-mono">
+            Como escribir correctamente JavaScript?
+        </h1>
+        <article class="flex flex-col text-black text-start my-10 gap-y-10 ">
+            <h2>Ejemplos de Código:</h2>
+
+            <p>
+                <strong
+                    >1. Declaración de Variables sin var, let o const:
+                    Incorrecta</strong
+                ><br />
+                <code>nombre = "Juan";</code>
+            </p>
+
+            <p>
+                <strong>2. Declaración de Variables con let: Correcta</strong
+                ><br />
+                <code>let nombre = "Juan";</code>
+            </p>
+
+            <p>
+                <strong>3. Uso de eval(): Incorrecta</strong><br />
+                <code>
+                    let codigoUsuario = "alert('Hola Mundo');";
+                    eval(codigoUsuario);
+                </code>
+            </p>
+
+            <p>
+                <strong>4. Uso de Funciones en lugar de eval(): Correcta</strong
+                ><br />
+                <code>
+                    let codigoUsuario = "alert('Hola Mundo');"; function
+                    ejecutarCodigo(codigo) {
+                        `
+                        return Function(codigo)();
+                   `
+                    }
+                     ejecutarCodigo(codigoUsuario);
+                </code>
+            </p>
+
+            <p>
+                <strong>5. Olvido de Punto y Coma: Incorrecta</strong><br />
+                <code>
+                    let x = 5;<br />
+                     let y = 10;
+                </code>
+            </p>
+
+            <p>
+                <strong>6. Uso Correcto de Punto y Coma: Correcta</strong><br />
+                <code>let x = 5; let y = 10;</code>
+            </p>
+
+            <p>
+                <strong>
+                    4. Comparación con == en lugar de ===: Incorrecta<br
+                    /></strong
+                >
+                <code
+                    >let numero = "5"; if (numero == 5) {
+                        `
+                        console.log("Igual"); // Incorrecto: == realiza una comparación sin tener en cuenta el tipo
+                   `
+                    }</code
+                >
+            </p>
+
+            <p>
+                <strong>6.Comparación con ===: Correcta</strong>
+
+                <code
+                    >let numero = "5"; if (parseInt(numero) === 5) {
+                        console.log("Igual")
+                    }</code
+                >
+            </p>
+        </article>
+        <button
+            class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+        >
+            <span
+                class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+            >
+                Mas Ejemplos:
+            </span>
+        </button>
+    </section>
+
+    <div style="overflow: hidden;">
+        <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 120"
+            xmlns="http://www.w3.org/2000/svg"
+            style="fill: #00e8d1; width: 100%; height: 45px; transform: rotate(180deg);"
+        >
+            <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25"></path>
+            <path
+                d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                opacity=".5"></path>
+            <path
+                d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+            ></path>
+        </svg>
+    </div>
+
+    <section class="text-black mt-5 mb-5 gap-10 py-5">
+        <h1>Consejos y Trucos</h1>
+        <h2>Extensiones de IDE recomendadas <br/>
+            Que te ayudaran en tu dia a dia  
+             
+        </h2>
+    
+        <ul class=" list-disc pl-5">
+            <li class="mb-5">
+                <strong>1. ThunderClient:</strong>
+                Lightweight Rest API Client for VS Code
+            </li>
+            <li class="mb-5">
+                <strong>Tailwind CSS IntelliSense:</strong>
+                Enhances the Tailwind development experience by providing Visual Studio Code users with advanced features such as autocomplete, syntax highlighting, and linting.
+            </li>
+            <li class="mb-5">
+                <strong>Pretty TypeScript Errors:</strong>
+                Make TypeScript errors prettier and more human-readable in VSCode.
+            </li>
+            <li class="mb-5">
+                <strong>Live Server:</strong>
+                Launch a development local Server with live reload feature for static & dynamic pages.
+            </li>
+            <li class="mb-5">
+                <strong>JSON Crack:</strong>
+                Seamlessly visualize your JSON data instantly into graphs.
+            </li>
+            <li class="mb-5">
+                <strong>Error Lens:</strong>
+                Improve highlighting of errors, warnings, and other language diagnostics.
+            </li>
+            <li class="mb-5">
+                <strong>Simple React Snippets:</strong>
+                Dead simple React snippets you will actually use.
+            </li>
+            <li class="mb-5">
+                <strong>cssrem:</strong>
+                Converts between px and rem units in VSCode.
+            </li>
+            <li class="mb-5">
+                <strong>Code Spell Checker:</strong>
+                Spelling checker for source code
+            </li>
+        </ul>
+    </section>
+
+    <section class="bg-gray-100 py-10">
+        <h1 class="text-4xl font-bold text-center mb-8">Casos de Uso Específicos</h1>
+    
+       
+        <div class="max-w-3xl mx-auto mb-10 bg-white rounded-md shadow-md p-8">
+            <h2 class="text-2xl font-bold text-blue-500 mb-4">JavaScript en Desarrollo Web Interactivo</h2>
+            <p class="text-gray-700">
+                JavaScript es fundamental en el desarrollo web interactivo. Con su ejecución en el navegador, permite la creación
+                de páginas dinámicas, manipulación del DOM y respuestas en tiempo real a las acciones del usuario.
+            </p>
+            <button onclick="JS()" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">Mostrar Mensaje</button>
+
+            <script>
+                function JS () {
+                    alert('¡Hola! Esto es JavaScript en acción.');
+                }
+            </script>
+        </div>
+    
+       
+        <div class="max-w-3xl mx-auto mb-10 bg-white rounded-md shadow-md p-8">
+            <h2 class="text-2xl font-bold text-green-500 mb-4">Python en Ciencia de Datos</h2>
+            <p class="text-gray-700">
+                Python es ampliamente utilizado en ciencia de datos gracias a sus bibliotecas como NumPy, Pandas y scikit-learn.
+                Facilita el análisis de datos, la creación de modelos y la visualización, siendo una opción poderosa para científicos de datos.
+            </p>
+            
+            <pre class=" bg-gray-200 p-4 rounded-md mt-4 ">
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                # Crear un DataFrame de ejemplo
+                data =
+                 {`'Mes': ['Enero', 'Febrero', 'Marzo'], 'Ventas': [50, 65, 80]`}
+                df = pd.DataFrame(data)
+                
+                # Visualizar los datos
+                plt.bar(df['Mes'], df['Ventas'])
+                plt.xlabel('Mes')
+                plt.ylabel('Ventas')
+                plt.title('Ventas Mensuales')
+                plt.show()
+                    </pre>
+        
+        </div>
+    
+       
+        <div class="max-w-3xl mx-auto mb-10 bg-white rounded-md shadow-md p-8">
+            <h2 class="text-2xl font-bold text-orange-500 mb-4">Java en Sistemas Empresariales</h2>
+            <p class="text-gray-700">
+                Java se destaca en el desarrollo de sistemas empresariales. Su portabilidad, robustez y arquitectura orientada a objetos
+                lo hacen ideal para construir aplicaciones escalables y seguras en entornos corporativos.
+            </p>
+            <pre class="bg-gray-200 p-4 rounded-md mt-4">
+                public class Empleado {`
+                    private String nombre;
+                    private int edad;
+                    private double salario;
+                
+                    // Constructor
+                    public Empleado(String nombre, int edad, double salario) {
+                        this.nombre = nombre;
+                        this.edad = edad;
+                        this.salario = salario;
+                    }
+                
+                    // Métodos getters y setters (omitiendo para brevedad)
+                    
+                    // Otros métodos y lógica de negocio
+                `}
+                    </pre>
+        </div>
+    
+        
+    
+    </section>
+    
+    
 </main>
