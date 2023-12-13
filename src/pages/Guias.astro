@@ -2,18 +2,17 @@
 import Notice from "../components/Notice.astro";
 import NoticeLeft from "../components/NoticeLeft.astro";
 import Footer from "../components/Footer.astro";
-import Info from "../components/Info.astro";
 ---
 
 <meta charset="UTF-8" />
-<main
-    class="flex flex-col justify-center items-center bg-white w-screen h-auto"
->
+<main class="flex flex-col justify-center items-center bg-white">
     <header
-        class="py-10 w-screen h-[80vh] bg-auto bg-no-repeat bg-center"
-        style="background-image: url('desktop.jpg'); ;"
+        class="py-10 mt-10 w-screen max-w-screen-xl h-[80vh] bg-auto bg-no-repeat bg-center rounded-lg"
+        style="background-image: url('desktop.jpg');"
     >
-        <section class="flex flex-col items-center justify-normal mb-10">
+        <section
+            class="flex flex-col items-center justify-normal mt-20 absolute inset-0 text-white"
+        >
             <div class="flex flex-col my-28">
                 <h1
                     class="flex text-gray-200 font-normal text-xl italic hover:underline"
@@ -33,9 +32,9 @@ import Info from "../components/Info.astro";
             </div>
         </section>
     </header>
-    <div class="divider divider-info">o</div>
+    <div class="divider divider-info"></div>
 
-    <article>
+    <article class="flex flex-wrap justify-center ">
         <NoticeLeft
             Title="Lenguajes de Programación"
             Description="Tutoriales y guías para aprender lenguajes populares como JavaScript, Python, Java, etc y Comparaciones entre diferentes lenguajes y casos de uso."
@@ -51,7 +50,7 @@ import Info from "../components/Info.astro";
             imageSrc="Front-End-Developer.webp"
             alt="Tecnologias para desarrollo Frontend"
             Action="Read More"
-            Link=""
+            Link="Frontend"
         />
         <div class="divider divider-accent"></div>
         <NoticeLeft
@@ -89,11 +88,6 @@ import Info from "../components/Info.astro";
             Action="Read More"
             Link="Recursos"
         />
-        <div class="divider divider-accent"></div>
     </article>
-
-    <section>
-      
-    </section>
 </main>
 <Footer />

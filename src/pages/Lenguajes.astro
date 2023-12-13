@@ -1,5 +1,6 @@
 ---
 import NoticeLeft from "../components/NoticeLeft.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <meta charset="UTF-8" />
@@ -42,6 +43,67 @@ import NoticeLeft from "../components/NoticeLeft.astro";
                     Desarrollador actual: Python Software Foundation. Última
                     versión estable: Python 3.11.5.
                 </p>
+                <h3 class="mt-5 text-black font-serif font-light">
+                    Por qué Python tiene tanta salida laboral hoy en día,
+                    algunos ejemplos de
+                </h3>
+                <ul class="text-gray-700">
+                    <li class="mt-5">
+                        1.Desarrollo web: Python es ampliamente utilizado en el
+                        desarrollo web con frameworks como Django y Flask, o
+                        para crear scripts del lado del servidor.
+                    </li>
+                    <li class="mt-5">
+                        2.Análisis de datos y ciencia de datos: Python es una
+                        opción popular en el campo de la ciencia de datos y el
+                        análisis de datos con bibliotecas como NumPy, Pandas,
+                        Matplotlib y SciPy.
+                    </li>
+                    <li class="mt-5">
+                        3.Inteligencia artificial y aprendizaje automático:
+                        Python es fundamental en proyectos de inteligencia
+                        artificial y aprendizaje automático con bibliotecas como
+                        TensorFlow y PyTorch.
+                    </li>
+                    <li class="mt-5">
+                        4.Automatización y scripting: Python es excelente para
+                        escribir scripts y automatizar tareas repetitivas,
+                        procesar archivos por lotes y administrar sistemas.
+                    </li>
+                    <li class="mt-5">
+                        4.Desarrollo de software: Python se utiliza en el
+                        desarrollo de software para crear aplicaciones de
+                        escritorio, juegos y prototipos rápidos.
+                    </li>
+                    <li class="mt-5">
+                        5.Administración de sistemas: Python se utiliza
+                        comúnmente en la administración de sistemas y redes con
+                        herramientas como Ansible, Fabric y SaltStack.
+                    </li>
+                    <li class="mt-5">
+                        6.Desarrollo de juegos: Aunque menos común, Python se
+                        utiliza en el desarrollo de juegos para prototipos
+                        rápidos, scripting en motores de juego como Unity, o
+                        desarrollo completo de juegos más simples.
+                    </li>
+                    <li class="mt-5">
+                        7.Aplicaciones científicas y de ingeniería: Python se
+                        utiliza en disciplinas científicas e ingenieriles para
+                        modelado y simulación, análisis de datos experimentales
+                        y visualización.
+                    </li>
+                    <li class="mt-5">
+                        8.Aplicaciones de escritorio y GUI: Python se utiliza
+                        para desarrollar aplicaciones de escritorio con
+                        interfaces gráficas de usuario (GUI) mediante
+                        bibliotecas como Tkinter, PyQt y Kivy.
+                    </li>
+                    <li class="mt-5">
+                        9.Desarrollo de aplicaciones móviles: Aunque menos
+                        común, Python se utiliza en el desarrollo de
+                        aplicaciones móviles con frameworks como Kivy y BeeWare.
+                    </li>
+                </ul>
             </div>
 
             <!-- JavaScript -->
@@ -338,9 +400,9 @@ import NoticeLeft from "../components/NoticeLeft.astro";
 
     <section class="flex flex-col text-black items-center my-10 gap-y-10">
         <h1 class="font-medium text-xl font-mono">
-            Como escribir correctamente JavaScript?
+            Como escribir correctamente Código?
         </h1>
-        <article class="flex flex-col text-black text-start my-10 gap-y-10 ">
+        <article class="flex flex-col text-black text-start my-10 gap-y-10">
             <h2>Ejemplos de Código:</h2>
 
             <p>
@@ -382,14 +444,17 @@ import NoticeLeft from "../components/NoticeLeft.astro";
             <p>
                 <strong>5. Olvido de Punto y Coma: Incorrecta</strong><br />
                 <code>
-                    let x = 5;<br />
+                    let x = 5<br />
                      let y = 10;
                 </code>
             </p>
 
             <p>
                 <strong>6. Uso Correcto de Punto y Coma: Correcta</strong><br />
-                <code>let x = 5; let y = 10;</code>
+                <code
+                    >let x = 5; <br />
+                     let y = 10;</code
+                >
             </p>
 
             <p>
@@ -407,7 +472,7 @@ import NoticeLeft from "../components/NoticeLeft.astro";
             </p>
 
             <p>
-                <strong>6.Comparación con ===: Correcta</strong>
+                <strong>6.Comparación con ===: Correcta</strong><br />
 
                 <code
                     >let numero = "5"; if (parseInt(numero) === 5) {
@@ -448,79 +513,99 @@ import NoticeLeft from "../components/NoticeLeft.astro";
 
     <section class="text-black mt-5 mb-5 gap-10 py-5">
         <h1>Consejos y Trucos</h1>
-        <h2>Extensiones de IDE recomendadas <br/>
-            Que te ayudaran en tu dia a dia  
-             
+        <h2>
+            Extensiones de IDE recomendadas <br />
+             Que te ayudaran en tu dia a dia :
         </h2>
-    
-        <ul class=" list-disc pl-5">
+
+        <ul class="list-disc pl-5">
             <li class="mb-5">
                 <strong>1. ThunderClient:</strong>
-                Lightweight Rest API Client for VS Code
+                 Lightweight Rest API Client for VS Code
             </li>
             <li class="mb-5">
                 <strong>Tailwind CSS IntelliSense:</strong>
-                Enhances the Tailwind development experience by providing Visual Studio Code users with advanced features such as autocomplete, syntax highlighting, and linting.
+                 Enhances the Tailwind development experience by providing
+                Visual Studio Code users with advanced features such as
+                autocomplete, syntax highlighting, and linting.
             </li>
             <li class="mb-5">
                 <strong>Pretty TypeScript Errors:</strong>
-                Make TypeScript errors prettier and more human-readable in VSCode.
+                 Make TypeScript errors prettier and more human-readable in
+                VSCode.
             </li>
             <li class="mb-5">
                 <strong>Live Server:</strong>
-                Launch a development local Server with live reload feature for static & dynamic pages.
+                 Launch a development local Server with live reload feature for
+                static & dynamic pages.
             </li>
             <li class="mb-5">
                 <strong>JSON Crack:</strong>
-                Seamlessly visualize your JSON data instantly into graphs.
+                 Seamlessly visualize your JSON data instantly into graphs.
             </li>
             <li class="mb-5">
                 <strong>Error Lens:</strong>
-                Improve highlighting of errors, warnings, and other language diagnostics.
+                 Improve highlighting of errors, warnings, and other language
+                diagnostics.
             </li>
             <li class="mb-5">
                 <strong>Simple React Snippets:</strong>
-                Dead simple React snippets you will actually use.
+                 Dead simple React snippets you will actually use.
             </li>
             <li class="mb-5">
                 <strong>cssrem:</strong>
-                Converts between px and rem units in VSCode.
+                 Converts between px and rem units in VSCode.
             </li>
             <li class="mb-5">
                 <strong>Code Spell Checker:</strong>
-                Spelling checker for source code
+                 Spelling checker for source code
             </li>
         </ul>
     </section>
 
     <section class="bg-gray-100 py-10">
-        <h1 class="text-4xl font-bold text-center mb-8">Casos de Uso Específicos</h1>
-    
-       
+        <h1 class="text-4xl font-bold text-center mb-8">
+            Casos de Uso Específicos
+        </h1>
+
         <div class="max-w-3xl mx-auto mb-10 bg-white rounded-md shadow-md p-8">
-            <h2 class="text-2xl font-bold text-blue-500 mb-4">JavaScript en Desarrollo Web Interactivo</h2>
+            <h2 class="text-2xl font-bold text-blue-500 mb-4">
+                JavaScript en Desarrollo Web Interactivo
+            </h2>
             <p class="text-gray-700">
-                JavaScript es fundamental en el desarrollo web interactivo. Con su ejecución en el navegador, permite la creación
-                de páginas dinámicas, manipulación del DOM y respuestas en tiempo real a las acciones del usuario.
+                JavaScript es fundamental en el desarrollo web interactivo. Con
+                su ejecución en el navegador, permite la creación de páginas
+                dinámicas, manipulación del DOM y respuestas en tiempo real a
+                las acciones del usuario.
             </p>
-            <button onclick="JS()" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">Mostrar Mensaje</button>
+            <button
+                onclick="btn()"
+                class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
+                id="btn">Mostrar Mensaje</button
+            >
 
             <script>
-                function JS () {
-                    alert('¡Hola! Esto es JavaScript en acción.');
-                }
+                document
+                    .getElementById("btn")
+                    .addEventListener("click", () =>
+                        alert("Esto es JavaScript"),
+                    );
             </script>
         </div>
-    
-       
+
         <div class="max-w-3xl mx-auto mb-10 bg-white rounded-md shadow-md p-8">
-            <h2 class="text-2xl font-bold text-green-500 mb-4">Python en Ciencia de Datos</h2>
+            <h2 class="text-2xl font-bold text-green-500 mb-4">
+                Python en Ciencia de Datos
+            </h2>
             <p class="text-gray-700">
-                Python es ampliamente utilizado en ciencia de datos gracias a sus bibliotecas como NumPy, Pandas y scikit-learn.
-                Facilita el análisis de datos, la creación de modelos y la visualización, siendo una opción poderosa para científicos de datos.
+                Python es ampliamente utilizado en ciencia de datos gracias a
+                sus bibliotecas como NumPy, Pandas y scikit-learn. Facilita el
+                análisis de datos, la creación de modelos y la visualización,
+                siendo una opción poderosa para científicos de datos.
             </p>
-            
-            <pre class=" bg-gray-200 p-4 rounded-md mt-4 ">
+
+            <pre
+                class="bg-gray-200 p-4 rounded-md mt-4">
                 import pandas as pd
                 import matplotlib.pyplot as plt
                 
@@ -536,17 +621,20 @@ import NoticeLeft from "../components/NoticeLeft.astro";
                 plt.title('Ventas Mensuales')
                 plt.show()
                     </pre>
-        
         </div>
-    
-       
+
         <div class="max-w-3xl mx-auto mb-10 bg-white rounded-md shadow-md p-8">
-            <h2 class="text-2xl font-bold text-orange-500 mb-4">Java en Sistemas Empresariales</h2>
+            <h2 class="text-2xl font-bold text-orange-500 mb-4">
+                Java en Sistemas Empresariales
+            </h2>
             <p class="text-gray-700">
-                Java se destaca en el desarrollo de sistemas empresariales. Su portabilidad, robustez y arquitectura orientada a objetos
-                lo hacen ideal para construir aplicaciones escalables y seguras en entornos corporativos.
+                Java se destaca en el desarrollo de sistemas empresariales. Su
+                portabilidad, robustez y arquitectura orientada a objetos lo
+                hacen ideal para construir aplicaciones escalables y seguras en
+                entornos corporativos.
             </p>
-            <pre class="bg-gray-200 p-4 rounded-md mt-4">
+            <pre
+                class="bg-gray-200 p-4 rounded-md mt-4">
                 public class Empleado {`
                     private String nombre;
                     private int edad;
@@ -559,16 +647,199 @@ import NoticeLeft from "../components/NoticeLeft.astro";
                         this.salario = salario;
                     }
                 
-                    // Métodos getters y setters (omitiendo para brevedad)
+                    // Métodos getters y setters 
                     
                     // Otros métodos y lógica de negocio
                 `}
                     </pre>
         </div>
-    
-        
-    
     </section>
-    
-    
+
+    {
+        /*
+        Crear componente 
+       */
+    }
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1
+                    class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+                >
+                    Master Cleanse Reliac Heirloom
+                </h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    Whatever cardigan tote bag tumblr hexagon brooklyn
+                    asymmetrical gentrify, subway tile poke farm-to-table.
+                    Franzen you probably haven't heard of them man bun deep
+                    jianbing selfies heirloom.
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img
+                            alt="gallery"
+                            class="absolute inset-0 mx-28 w-52 h-full object-cover object-center"
+                            src="/public/Logos/1.svg"
+                        />
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        >
+                            <h2
+                                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                            >
+                                HTML
+                            </h2>
+                            <h1
+                                class="title-font text-lg font-medium text-gray-900 mb-3"
+                            >
+                                Shooting Stars
+                            </h1>
+                            <p class="leading-relaxed">
+                                Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing microdosing tousled waistcoat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img
+                            alt="gallery"
+                            class="absolute inset-0 mx-28 w-52 h-full object-cover object-center"
+                            src="/public/Logos/2.svg"
+                        />
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        >
+                            <h2
+                                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                            >
+                                THE SUBTITLE
+                            </h2>
+                            <h1
+                                class="title-font text-lg font-medium text-gray-900 mb-3"
+                            >
+                                The Catalyzer
+                            </h1>
+                            <p class="leading-relaxed">
+                                Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing microdosing tousled waistcoat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img
+                            alt="gallery"
+                            class="absolute inset-0 mx-28 w-52 h-full object-cover object-center"
+                            src="https://dummyimage.com/603x363"
+                        />
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        >
+                            <h2
+                                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                            >
+                                THE SUBTITLE
+                            </h2>
+                            <h1
+                                class="title-font text-lg font-medium text-gray-900 mb-3"
+                            >
+                                The 400 Blows
+                            </h1>
+                            <p class="leading-relaxed">
+                                Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing microdosing tousled waistcoat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img
+                            alt="gallery"
+                            class="absolute inset-0 mx-28 w-52 h-full object-cover object-center"
+                            src="https://dummyimage.com/602x362"
+                        />
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        >
+                            <h2
+                                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                            >
+                                THE SUBTITLE
+                            </h2>
+                            <h1
+                                class="title-font text-lg font-medium text-gray-900 mb-3"
+                            >
+                                Neptune
+                            </h1>
+                            <p class="leading-relaxed">
+                                Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing microdosing tousled waistcoat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img
+                            alt="gallery"
+                            class="absolute inset-0 mx-28 w-52 h-full object-cover object-center"
+                            src="https://dummyimage.com/605x365"
+                        />
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        >
+                            <h2
+                                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                            >
+                                THE SUBTITLE
+                            </h2>
+                            <h1
+                                class="title-font text-lg font-medium text-gray-900 mb-3"
+                            >
+                                Holden Caulfield
+                            </h1>
+                            <p class="leading-relaxed">
+                                Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing microdosing tousled waistcoat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img
+                            alt="gallery"
+                            class="absolute inset-0 mx-28 w-52 h-full object-cover object-center"
+                            src="https://dummyimage.com/606x366"
+                        />
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        >
+                            <h2
+                                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                            >
+                                THE SUBTITLE
+                            </h2>
+                            <h1
+                                class="title-font text-lg font-medium text-gray-900 mb-3"
+                            >
+                                Alper Kamu
+                            </h1>
+                            <p class="leading-relaxed">
+                                Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing microdosing tousled waistcoat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+<Footer />
