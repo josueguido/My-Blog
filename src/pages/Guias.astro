@@ -2,36 +2,27 @@
 import Notice from "../components/Notice.astro";
 import NoticeLeft from "../components/NoticeLeft.astro";
 import Footer from "../components/Footer.astro";
+import LandingBlog from "../components/LandingBlog.astro";
 ---
 
 <meta charset="UTF-8" />
+<LandingBlog/>
 <main class="flex flex-col justify-center items-center bg-white">
-    <header
-        class="py-10 mt-10 w-screen max-w-screen-xl h-[80vh] bg-auto bg-no-repeat bg-center rounded-lg"
-        style="background-image: url('desktop.jpg');"
-    >
-        <section
-            class="flex flex-col items-center justify-normal mt-20 absolute inset-0 text-white"
-        >
-            <div class="flex flex-col my-28">
-                <h1
-                    class="flex text-gray-200 font-normal text-xl italic hover:underline"
-                >
-                    Explorando el Universo del Desarrollo Web: Tecnologias,
-                    Experiencias y Consejos.
+    <header class=" w-full h-[80vh] bg-cover bg-center rounded-lg" style="background-image: url('desktop.jpg');">
+        <section class="flex flex-col items-center justify-center md:justify-start mt-20 absolute inset-0 text-white">
+            <div class="flex flex-col items-center my-10">
+                <h1 class="text-gray-200 font-normal text-lg md:text-2xl italic hover:underline text-center md:text-left">
+                    Explorando el Universo del Desarrollo Web: Tecnologias, Experiencias y Consejos.
                 </h1>
                 <div class="mockup-code mockup-phone my-10">
                     <pre data-prefix="$"><code>npm i web dev</code></pre>
-                    <pre
-                        class="text-warning"
-                        data-prefix=">"><code>installing...</code></pre>
-                    <pre
-                        class="text-success"
-                        data-prefix=">"><code>Done!</code></pre>
+                    <pre class="text-warning" data-prefix=">"><code>installing...</code></pre>
+                    <pre class="text-success" data-prefix=">"><code>Done!</code></pre>
                 </div>
             </div>
         </section>
     </header>
+    
     <div class="divider divider-info"></div>
 
     <article class="flex flex-wrap justify-center ">
