@@ -1,253 +1,474 @@
 ---
-
+import Footer from "../components/Footer.astro";
 ---
 
 <meta charset="utf-8" />
 <body>
     <main class="bg-white">
-        <header class="bg-gray-100 p-8">
-            <h1 class="text-3xl font-bold text-blue-600 mb-4">
-                Desarrollo Front-End
+        <header
+            class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white p-8 jus"
+        >
+            <h1 class="flex justify-center text-4xl font-extrabold mb-4">
+                ¡Descubre el Poder del Desarrollo Front-End!
             </h1>
-            <p class="text-gray-800 mb-6">
-                Explora el emocionante mundo del desarrollo web moderno, que
-                abarca las tecnologías fundamentales como HTML5, CSS3 y
-                JavaScript. Enfócate en la creación de interfaces atractivas y
-                funcionales, utilizando prácticas de diseño responsivo para
-                garantizar una experiencia óptima en una variedad de
-                dispositivos.
+            <p class="text-gray-200 mb-6">
+                Sumérgete en el emocionante mundo del desarrollo web moderno,
+                abarcando tecnologías clave como HTML5, CSS3 y JavaScript.
+                Concentra tu creatividad en la creación de interfaces
+                sorprendentes y funcionales, utilizando prácticas de diseño
+                responsivo para garantizar una experiencia óptima en cualquier
+                dispositivo.
             </p>
-            <p class="text-gray-800 mb-6">
-                Aprende sobre accesibilidad web para hacer que tus aplicaciones
-                sean inclusivas y utilizables para todos. Además, descubre los
-                frameworks y bibliotecas frontend más populares que facilitan el
-                desarrollo, mejoran la eficiencia y permiten la creación de
-                aplicaciones web poderosas y dinámicas.
+            <p class="text-gray-200 mb-6">
+                Explora la accesibilidad web para hacer que tus aplicaciones
+                sean inclusivas y utilizables para todos. Descubre también los
+                frameworks y bibliotecas frontend más populares que no solo
+                facilitan el desarrollo, sino que potencian la eficiencia y te
+                permiten construir aplicaciones web poderosas y dinámicas.
             </p>
         </header>
-        <article class="py-10 my-5">
-            <section>
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-24 mx-auto">
-                        <div
-                            class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
-                        >
-                            <h1
-                                class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+
+        <article>
+            <section class="bg-gray-100 p-8">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                    El Camino hacia Convertirte en un Desarrollador Front-End
+                </h2>
+                <p class="text-gray-800 mb-6">
+                    ¿Te preguntas cómo dar tus primeros pasos como desarrollador
+                    Front-End? Explorar el emocionante mundo de la creación de
+                    interfaces de usuario es un viaje fascinante. Aquí te
+                    presentamos el camino y las tecnologías clave que
+                    necesitarás dominar para alcanzar tus objetivos.
+                </p>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">
+                    1. Fundamentos Esenciales:
+                </h3>
+                <p class="text-gray-800 mb-6">
+                    Comienza con los fundamentos. Domina HTML5 para estructurar
+                    el contenido, utiliza CSS3 para dar estilo y mejora la
+                    interactividad con JavaScript. Aprender estos lenguajes
+                    básicos te proporcionará la base necesaria para construir
+                    experiencias de usuario atractivas.
+                </p>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">
+                    2. Profundiza en JavaScript:
+                </h3>
+                <p class="text-gray-800 mb-6">
+                    Conviértete en un experto en JavaScript. Explora conceptos
+                    avanzados como promesas, async/await y gestión
+                </p>
+
+                <ul class="timeline timeline-vertical">
+                    <li>
+                        <div class="timeline-start timeline-box">HTML</div>
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
                             >
-                               HTML
-                            </h1>
-                            <p
-                                class="lg:w-1/2 w-full leading-relaxed text-gray-500"
+                        </div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
                             >
-                                Whatever cardigan tote bag tumblr hexagon
-                                brooklyn asymmetrical gentrify, subway tile poke
-                                farm-to-table.
-                            </p>
                         </div>
-                        <div class="flex flex-wrap -m-4">
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div
-                                    class="border border-gray-200 p-6 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-                                    >
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            class="w-6 h-6"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"
-                                            ></path>
-                                        </svg>
-                                    </div>
-                                    <h2
-                                        class="text-lg text-gray-900 font-medium title-font mb-2"
-                                    >
-                                       HTML
-                                    </h2>
-                                    <p class="leading-relaxed text-base">
-                                        Fingerstache flexitarian street art
-                                        8-bit waist co, subway tile poke farm.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div
-                                    class="border border-gray-200 p-6 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-                                    >
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            class="w-6 h-6"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <circle cx="6" cy="6" r="3"
-                                            ></circle>
-                                            <circle cx="6" cy="18" r="3"
-                                            ></circle>
-                                            <path
-                                                d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
-                                            ></path>
-                                        </svg>
-                                    </div>
-                                    <h2
-                                        class="text-lg text-gray-900 font-medium title-font mb-2"
-                                    >
-                                        CSS
-                                    </h2>
-                                    <p class="leading-relaxed text-base">
-                                        Fingerstache flexitarian street art
-                                        8-bit waist co, subway tile poke farm.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div
-                                    class="border border-gray-200 p-6 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-                                    >
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            class="w-6 h-6"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-                                            ></path>
-                                            <circle cx="12" cy="7" r="4"
-                                            ></circle>
-                                        </svg>
-                                    </div>
-                                    <h2
-                                        class="text-lg text-gray-900 font-medium title-font mb-2"
-                                    >
-                                       JavaScript
-                                    </h2>
-                                    <p class="leading-relaxed text-base">
-                                        Fingerstache flexitarian street art
-                                        8-bit waist co, subway tile poke farm.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div
-                                    class="border border-gray-200 p-6 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-                                    >
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            class="w-6 h-6"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"
-                                            ></path>
-                                        </svg>
-                                    </div>
-                                    <h2
-                                        class="text-lg text-gray-900 font-medium title-font mb-2"
-                                    >
-                                        DOM
-                                    </h2>
-                                    <p class="leading-relaxed text-base">
-                                        Fingerstache flexitarian street art
-                                        8-bit waist co, subway tile poke farm.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div
-                                    class="border border-gray-200 p-6 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-                                    >
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            class="w-6 h-6"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
-                                            ></path>
-                                        </svg>
-                                    </div>
-                                    <h2
-                                        class="text-lg text-gray-900 font-medium title-font mb-2"
-                                    >
-                                        React
-                                    </h2>
-                                    <p class="leading-relaxed text-base">
-                                        Fingerstache flexitarian street art
-                                        8-bit waist co, subway tile poke farm.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div
-                                    class="border border-gray-200 p-6 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-                                    >
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            class="w-6 h-6"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                                            ></path>
-                                        </svg>
-                                    </div>
-                                    <h2
-                                        class="text-lg text-gray-900 font-medium title-font mb-2"
-                                    >
-                                        Herramientas Front-End
-                                    </h2>
-                                    <p class="leading-relaxed text-base">
-                                        Fingerstache flexitarian street art
-                                        8-bit waist co, subway tile poke farm.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="timeline-end timeline-box">CSS</div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-start timeline-box">
+                            JavaScript
                         </div>
-                      
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                        <div class="timeline-end timeline-box">DOM</div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-start timeline-box">React</div>
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                    </li>
+
+                    <li>
+                        <hr />
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                        <div class="timeline-end timeline-box">Git</div>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <hr />
+                        <div class="timeline-start timeline-box">GitHub</div>
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                    </li>
+
+                    <li>
+                        <hr />
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                        <div class="timeline-end timeline-box">NPM</div>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <hr />
+                        <div class="timeline-start timeline-box">
+                            WebPack o Vite
+                        </div>
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                    </li>
+
+                    <li>
+                        <hr />
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="w-5 h-5"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </div>
+                        <div class="timeline-end timeline-box">Netlifly</div>
+                        <hr />
+                    </li>
+                </ul>
+
+                <p class="text-black font-extralight font-serif mt-10">
+                    Tambien hay otras tecnologías que pueden ayudarte a ser mas
+                    productivo, como por ejemplo TailwindaCSS, Astro o NextJS
+                    para crear landing pages o blog, es importante profundizar
+                    en cada uno de ellos.
+                </p>
+                <p class="text-gray-800 font-light font-serif mt-10">
+                    En HTML, la ruta de aprendizaje incluye los siguientes
+                    elementos:
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">Textos</li>
+                    <li class="mb-2">Navegación</li>
+                    <li class="mb-2">Imágenes</li>
+                    <li class="mb-2">Multimedia</li>
+                    <li class="mb-2">Contenido</li>
+                    <li class="mb-2">Estructura</li>
+                    <li class="mb-2">Formularios</li>
+                </ul>
+
+                <p class="text-gray-800 font-light font-serif mt-10">
+                    En CSS, la ruta de aprendizaje incluye los siguientes
+                    elementos:
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">Fundamentos</li>
+                    <li class="mb-2">Texto</li>
+                    <li class="mb-2">Modelo Caja</li>
+                    <li class="mb-2">Estilos</li>
+                    <li class="mb-2">Disposicion</li>
+                    <li class="mb-2">Responsive Desing</li>
+                    <li class="mb-2">Selectores</li>
+
+                    <li class="mb-2">Tailwind</li>
+                    <li class="mb-2">Boostrap</li>
+                    <li class="mb-2">SASS</li>
+                </ul>
+
+                <p class="text-gray-800 font-light font-serif mt-10">
+                    En JavaScript, la ruta de aprendizaje incluye los siguientes
+                    elementos:
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">Variables y tipos de datos</li>
+                    <li class="mb-2">Operadores</li>
+                    <li class="mb-2">Condicionales</li>
+                    <li class="mb-2">Bucles</li>
+                    <li class="mb-2">Funciones</li>
+                    <li class="mb-2">POO- Programación orientada a objetos</li>
+                    <li class="mb-2">Modulos</li>
+                    <li class="mb-2">Asincronia</li>
+                    <li class="mb-2">Patrones</li>
+                </ul>
+                <p class="text-gray-800 font-light font-serif mt-10">
+                    En DOM, la ruta de aprendizaje incluye los siguientes
+                    elementos:
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">Consultas</li>
+                    <li class="mb-2">CRUD</li>
+                    <li class="mb-2">Modificaciones</li>
+                    <li class="mb-2">Eventos</li>
+                    <li class="mb-2">El Motor de Javascript</li>
+                </ul>
+
+                <p class="text-gray-800 font-light font-serif mt-10">
+                    Algunas herramientas que te ayudaran
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">NPM</li>
+                    <li class="mb-2">Git</li>
+                    <li class="mb-2">GitHub</li>
+                    <li class="mb-2">Netlify</li>
+                    <li class="mb-2">La terminal- PowerShell o Bash</li>
+                </ul>
+
+                <p class="text-gray-800 font-light font-serif mt-10">
+                    En React, la ruta de aprendizaje incluye los siguientes
+                    elementos:
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">JSX</li>
+                    <li class="mb-2">Virtual DOM</li>
+                    <li class="mb-2">Elementos</li>
+                    <li class="mb-2">Ciclos de Vida</li>
+                    <li class="mb-2">Eventos</li>
+                    <li class="mb-2">Clases</li>
+                    <li class="mb-2">Condicionales</li>
+                    <li class="mb-2">Estados</li>
+                    <li class="mb-2">Ganchos</li>
+                </ul>
+                <p class="text-gray-800 font-light font-serif mt-6">
+                    ¡No olvides explorar el fascinante mundo de las bases de
+                    datos! Considera aprender sobre bases de datos SQL y NoSQL,
+                    incluyendo tecnologías como:
+                </p>
+
+                <ul class="list-disc text-blue-600 ml-6 mt-4">
+                    <li class="mb-2">MongoDB</li>
+                    <li class="mb-2">PostgreSQL</li>
+                    <li class="mb-2">SQL</li>
+                    <li class="mb-2">MariaDB</li>
+                </ul>
+            </section>
+
+            <section
+                class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-8 rounded-lg shadow-lg"
+            >
+                <h2 class="text-3xl font-bold mb-4">
+                    Diseño Responsivo y Accesibilidad: Creando Experiencias para
+                    Todos
+                </h2>
+                <p class="text-lg mb-6">
+                    El diseño responsivo y la accesibilidad son fundamentales en
+                    el desarrollo web moderno. Estas prácticas no solo mejoran
+                    la experiencia del usuario, sino que también hacen que tu
+                    aplicación sea accesible para todos, independientemente de
+                    sus capacidades. Veamos cómo integrar estas importantes
+                    consideraciones en tu desarrollo con HTML y Tailwind CSS.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Diseño Responsivo -->
+                    <div class="mb-8 md:mb-0">
+                        <h3 class="text-2xl font-semibold mb-3">
+                            Diseño Responsivo: Una Necesidad en la Era Móvil
+                        </h3>
+                        <p class="text-lg mb-4">
+                            El diseño responsivo se centra en crear interfaces
+                            flexibles que se adapten a diferentes tamaños de
+                            pantalla. Utiliza media queries y flexibilidad
+                            visual para garantizar una experiencia de usuario
+                            consistente en dispositivos móviles, tabletas y
+                            computadoras de escritorio.
+                        </p>
+                        <p class="text-lg">
+                            Aprovecha herramientas como flexbox y grid layouts
+                            para lograr un diseño fluido. Recuerda que un diseño
+                            responsivo no solo mejora la experiencia del
+                            usuario, sino que también tiene beneficios en
+                            términos de SEO.
+                        </p>
                     </div>
-                </section>
+
+                    <!-- Accesibilidad Web -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">
+                            Accesibilidad Web: Abriendo las Puertas para Todos
+                        </h3>
+                        <p class="text-lg mb-4">
+                            La accesibilidad web se trata de crear experiencias
+                            que sean utilizables por todas las personas,
+                            independientemente de sus habilidades o
+                            discapacidades. Incorpora principios como contraste
+                            adecuado, etiquetas descriptivas y navegación
+                            intuitiva para hacer tu aplicación accesible.
+                        </p>
+                        <p class="text-lg">
+                            Asegúrate de que tu aplicación sea fácilmente
+                            navegable con teclado y de que los elementos sean
+                            comprensibles para lectores de pantalla. La
+                            accesibilidad no solo es una responsabilidad ética,
+                            sino que también mejora la usabilidad para todos los
+                            usuarios.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <!-- Integrando Diseño Responsivo y Accesibilidad -->
+                    <h3 class="text-2xl font-semibold mb-3">
+                        Integrando Diseño Responsivo y Accesibilidad: Un Enfoque
+                        Holístico
+                    </h3>
+                    <p class="text-lg mb-4">
+                        Cuando se aplican de manera conjunta, diseño responsivo
+                        y accesibilidad crean interfaces que se adaptan a
+                        diversas necesidades y preferencias de los usuarios.
+                        Asegúrate de que tu contenido sea presentado de manera
+                        lógica en el código fuente, facilitando la navegación
+                        para todos los usuarios.
+                    </p>
+                    <p class="text-lg">
+                        Realiza pruebas continuas en distintos dispositivos y
+                        navegadores para garantizar una experiencia consistente.
+                        Cada línea de código puede ser una oportunidad para
+                        construir un puente hacia la inclusión digital.
+                    </p>
+                </div>
+
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-semibold mb-3">
+                        Beneficios de Utilizar Imágenes en Formato SVG
+                    </h3>
+                    <p class="text-lg mb-4">
+                        El diseño responsivo se destaca aún más al utilizar
+                        imágenes en formato SVG (Scalable Vector Graphics). A
+                        diferencia de otros formatos de imágenes, SVG ofrece
+                        ventajas significativas para garantizar una experiencia
+                        visual óptima en todos los dispositivos.
+                    </p>
+                    <p class="text-lg">
+                        SVG es un formato basado en vectores, lo que significa
+                        que las imágenes pueden escalarse sin pérdida de
+                        calidad, adaptándose perfectamente a diferentes tamaños
+                        de pantalla. Esta característica es esencial para
+                        mantener la nitidez y la claridad de las imágenes en
+                        dispositivos móviles, tabletas y computadoras de
+                        escritorio.
+                    </p>
+                    <p class="text-lg">
+                        Además, al ser un formato de texto basado en XML, las
+                        imágenes SVG son legibles por máquinas y fácilmente
+                        comprensibles para los motores de búsqueda. Esto mejora
+                        la accesibilidad y tiene beneficios positivos en
+                        términos de SEO, contribuyendo a un mejor
+                        posicionamiento en los resultados de búsqueda.
+                    </p>
+                    <p class="text-lg">
+                        Incorporar SVG en tu diseño responsivo no solo optimiza
+                        la presentación visual, sino que también contribuye a
+                        una experiencia de usuario más eficiente y atractiva en
+                        todos los dispositivos.
+                    </p>
+                </div>
             </section>
         </article>
     </main>
+    <Footer />
 </body>
